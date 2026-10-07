@@ -40,7 +40,8 @@ jobs:
       - name: Lint passou
         if: success()
         run: echo "✅ Código aprovado pelo ESLint!"
-    test:
+
+  test:
     name: Tests (Jest)
     needs: lint
     runs-on: ubuntu-latest
